@@ -1,0 +1,41 @@
+header {
+    font: bold 12pt Arial;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: rgb(218, 211, 152);
+}
+section {
+    background-color: white;
+    width: 450px;
+    border-radius: 11px;
+    box-shadow: 5px 5px 5px rgb(153, 147, 147);
+    font: normal 10pt Arial;
+    padding: 15px;
+    margin: auto;
+
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+#imagem {
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.imagem:background-image{
+    max-height: 200px;
+}
+
+footer {
+    font: italic 11pt Arial;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #radar {
+            background: rgb(218, 211, 171);
+            height: auto;
+            width: 400px;
+            padding: 10px;
+        }
+
+        #radarcontent {
+            display: flex;
+            justify-content: center;
+        }
+
+        #res {
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="radar">
+        <div id="radarcontent">
+        Digite sua velocidade: <input type="number" name="" id="txtveloc">
+        <input type="button" value="verificar" onclick="verificar()">
+        </div>
+        <div id="res"></div>
+    </section>
+
+    <script>
+        function verificar() {
+            var txtvel = document.querySelector('input#txtveloc')
+            var txtres = document.querySelector('div#res')
+            var velocidade = Number(txtvel.value)
+            txtres.innerHTML = `<p>Sua velocidade é ${velocidade}.</p>`
+
+            if(velocidade > 60) {
+                txtres.innerHTML += '<p>Você foi <strong> multado </strong>!'
+            }
+
+            txtres.innerHTML += '<p>Dirija com segurança.'
+
+        }
+
+    </script>
+    
+</body>
+</html>

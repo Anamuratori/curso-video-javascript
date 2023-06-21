@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h2>Estrangeiro ou brasileiro?</h2>
+    Digite o seu país de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="submeter" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+        var txtp = document.getElementById('txtpais')
+        var pais = txtp.value
+        var resultado = document.getElementById('res')
+        resultado.innerHTML = `<p>Seu país de origem é ${pais}.</p>`
+        
+        if(pais == 'Brasil') {
+            resultado.innerHTML += '<p>Brasileiro!</p>'
+        } else {
+            resultado.innerHTML += '<p>Estrangeiro!</p>'
+        }
+    }     
+    </script>
+
+
+
+    
+</body>
+</html>

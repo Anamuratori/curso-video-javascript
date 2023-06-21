@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(193, 193, 226);
+            color: white;
+            font: normal 10pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        /*var n1 = Number.parseInt(window.prompt('Digite 1 numero:'))
+        var n2 = Number.parseInt(window.prompt('Digite outro numero:'))*/
+        var n1 = Number(window.prompt('Digite 1 numero:'))
+        var n2 = Number(window.prompt('Digite outro numero:'))
+        var soma = n1 + n2
+        //window.alert('A soma dos números é ' + soma)
+        window.alert(`A soma entre ${n1} e ${n2} é ${soma}`)
+    </script>
+</body>
+</html>
